@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+@import 'animate.css';
+@plugin "daisyui";
+
+
+@theme {
+  /* Font Family */
+  --font-out:Bona Nova SC,serif;
+
+  /* Colors */
+  --color-pri: #bb6b3f;
+  --color-pri-dark: #a55a32;
+  --color-sec: #f7ecde;
+  --color-sec-dark: #f0e2ce;
+}
+
+@layer components{
+    .btn{
+        @apply inline-flex justify-center items-center py-3 px-5 text-base font-normal text-center text-white rounded-lg bg-pri hover:bg-amber-900 focus:ring-4 focus:ring-pri dark:focus:ring-pri shadow-md ;
+    }
+}
